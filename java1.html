@@ -1,0 +1,87 @@
+<DOCTYPE-html>
+<html>
+<head>
+<script>
+var a=2,b=10;
+b**=a;
+document.write(b);
+document.write("<br/>");
+document.write(typeof(b));
+document.write("<br/><br/><br/>");
+
+<!-------------------------------If statement Uses------------------------------------->
+hello();
+document.write("<br/><br/><br/>");
+var name="Yahoo Baba";
+var gender='Male';
+if(gender=="Male"){
+                 document.write("Hello Mr. "+name);}
+else{
+     document.write("Not Same");}
+document.write("<br/><br/><br/>");
+<!------------------------------Uses of Switch Statement--------------------------->
+
+var age=prompt("Enter your Age: ");
+switch(true)
+     {
+       case (age>=15&&age<=20):
+                             document.write("You are Eligible.");break;
+        case (age>=21&&age<=30):
+                             document.write("You are not Eligible.");break;
+         default:  document.write("Enter your valid age.");
+      }
+document.write("<br/><br/><br/>");
+
+<!--------------------------------Creation of function----------------------------------------->
+
+function hello(){
+          document.write("Hello Everybody");}
+hello();
+document.write("<br/><br/><br/>");
+
+<!------------------------------Function with Arguments------------------------------------->
+
+function hello1(fname="Yahoo",lname="Baba"){
+                  document.write("Hello"+" "+fname+" "+lname+"<br/>");}
+        hello1("Ram","Singh");
+document.write("<br/><br/><br/>");
+<!--------------------------Function with return value-------------------------------------->
+function sum(math,phy,che){
+   var s=math+phy+che;
+   return s;}
+var total=sum(10,20,30);
+document.write(total);
+document.write("<br/><br/><br/>"); 
+<!--------------------------------Lopping Statement------------------------------------------->
+for(var a=1;a<=5;a++){
+document.write("<br/>Hello For_Loop");
+}
+document.write("<br/><br/><br/>")
+
+var a=1;
+while(a<6){
+document.write([a]+" While Loop<br/>");
+a++;
+}document.write("<br/><br/><br/>")
+
+
+var a=1;
+do{
+document.write("<br/>Do_While loop");
+a=a+1;
+}while(a<6);
+document.write("<br/><br/><br/>")
+
+for(var a=1;a<=10;a++){
+if(a==3){
+document.write("Hey:"+a+"<br/>");
+continue;
+}
+document.write("Number:"+a+"<br/>");
+}
+</script>
+</head>
+<body>
+<br/><h1>Thankyou !</h1>
+</body>
+</html>
